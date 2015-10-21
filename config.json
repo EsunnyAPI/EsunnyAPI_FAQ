@@ -5,5 +5,9 @@
         "content":"source",
         "toc": "source/SUMMARY.md",
         "readme": "source/README.md"
-        }
+        },
+	"plugins": [
+        "toc",
+        "js-sequence-diagram"
+    ],
 }
