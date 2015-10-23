@@ -13,4 +13,51 @@ const int ESUNNY_QUOT_ERR_NOCONTRACT			= -5; //未找到此合约代码
 const int ESUNNY_QUOT_ERR_DATEINCORRECT			= -6; //日期不正确
 const int ESUNNY_QUOT_ERR_SUBNUMEXCEED			= -7; //行情订阅数量超限
 const int ESUNNY_QUOT_ERR_SUBFREQUENCYEXCEED	= -8; //行情订阅频率超限
+
 ```
+
+
+#流程
+1. CreateEsunnyQuotClient 创建一个行情API实例,并设置回调函数接口
+2. InitSecretKey 初始化密钥
+3. Connect 连接行情服务器
+4. Login 登陆行情服务器，完成初始化阶段
+5. OnRspMarketInfo 接收可以订阅的所有行情合约
+6. 订阅从第5步中接收的合约
+
+---
+
+#批量订阅合约
+
+- 先循环调用AddReqStk,将订阅的行情添加在缓存中，最后调用SendReqStk发送订阅指令
+
+---
+
+
+
+#OnRspMarketInfo
+
+
+```
+virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast){
+
+		if (bLast==1)
+		{
+			return 0;
+		}
+
+		for(int i=0 ;i<pMarketInfo->stocknum;++i)
+		{
+			string str_contractInfo  = string(pMarketInfo->stockdata[i].szCode);
+			v_contractInfo.push_back(str_contractInfo);
+		}
+		
+
+		return 0;
+	}
+```
+
+
+#订阅数量限制、订阅频率限制
+- 订阅数量限制：订阅数量是API总共能够订阅合约的总量，由后台行情服务器设置决定
+- 订阅频率限制：
