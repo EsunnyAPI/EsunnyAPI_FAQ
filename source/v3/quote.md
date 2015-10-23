@@ -61,3 +61,12 @@ virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast){
 #订阅数量限制、订阅频率限制
 - 订阅数量限制：订阅数量是API总共能够订阅合约的总量，由后台行情服务器设置决定
 - 订阅频率限制：
+
+
+#授权码的获取
+授权码与期货公司的行情授权绑定，客户接入实盘时请向期货公司申请授权码
+
+---
+
+
+
