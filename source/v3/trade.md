@@ -155,3 +155,31 @@ iReqID ==10 对应刚才发出的下单指令
 - 成交ID：一笔成交生成一个成交ID，当成交状态变化后（如进行删除成交的操作），成交ID不改变
 - 成交流号：一笔成交生成一个成交ID，当成交状态变化后，成交流号也重新生成
 
+---
+#513 客户没有授权问题排查
+  
+```//登录请求结构
+    struct TEsLoginReqField
+    {    
+        TIsCaLoginType				IsCaLogin;              //是否CA认证
+        TEsLoginIdentityType		Identity;               //登录身份类型,目前只支持单客户
+        TIsForcePasswordType		IsForcePwd;             //是否强制修改密码
+        /// 使用不同账户登录时共用登录号
+        union														
+        {
+            TClientNoType				ClientNo;			//客户号,代理客户号
+            TOperatorNoType				OperatorNo;			//操作员号,代理操作员号
+        };
+        /// 对应所使用的登录账号的密码
+        TLoginPasswordType			LoginPwd;				//登录密码
+        /// 强制修改密码时的新密码
+        TLoginPasswordType			NewPwd;					//强制修改密码登录时,新修改密码
+        TOtpPassType				OtpPass;                //otp认证密码
+        TEsSizeType                 CaLen;                  //CA信息长度，IsCaLogin为'Y'时，本字段有效
+        TCaInfoType					CaInfo;					//CA登录时填写,IsCaLogin为'Y'时，本字段有效
+    };```
+    
+    
+- 登陆身份，IDENTITY_CLIENT（个人客户）、 IDENTITY_TRADER（交易员）、 IDENTITY_MANAGE（管理员），后台配置为何种类型授权，用相应身份登陆
+- 结构体填充时，个人客户用ClientNo，交易员操作员用 OperatorNo。
+- 联系IT，检查后台API授权设置，核对授权是否与后台设置一致。
