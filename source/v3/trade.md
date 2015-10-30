@@ -192,5 +192,21 @@ iReqID ==10 对应刚才发出的下单指令
 
 ---
 
+#币种与汇率
+
+
+    //币种查询应答结构
+    struct TEsCurrencyQryRspField
+    {
+        TCurrencyNoType				CurrencyNo;
+        TCurrencyNameType			CurrencyName;
+        TIsPrimaryCurrencyType		IsPrimary;
+        TCurrencyGroupFlagType		CurrencyGroup;
+        TExchangeRateType			ExchangeRate;
+    };
+    
+
+
+
 
 
