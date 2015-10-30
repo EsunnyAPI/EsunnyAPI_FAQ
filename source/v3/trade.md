@@ -206,7 +206,22 @@ iReqID ==10 对应刚才发出的下单指令
     };
     
 
+- IsPrimar 是否基币
+- CurrencyGroup币种组标志(同一币种组，资金共享）
+- ExchangeRate汇率
 
+- 汇率计算示例:
+
+| HKD |IsPrimary=Y | CurrencyGroup=A|ExchangeRate=1.0 |
+| -- | -- | -- | -- |
+| USD| IsPrimary=N | CurrencyGroup=A |ExchangeRate=7.749|
+
+---
+
+
+
+
+  
 
 
 
