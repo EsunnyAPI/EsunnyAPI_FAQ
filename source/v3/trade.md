@@ -227,9 +227,5 @@ iReqID ==10 对应刚才发出的下单指令
 
 ---
 #API 申请流
+![](D][`_YRU0N))~XS@BVYY7`F.png)
 
-
-```flow 
-st=>star:登陆www.esunny.cc注册开发者账号 e=>end：实盘交易op1=>下载测试API开发包
-st->op1->e
-```
