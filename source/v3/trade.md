@@ -26,7 +26,7 @@
 
 ```virtual void __cdecl OnRtnMatchInfo(const TEsMatchInfoNoticeField& rsp) = 0```
    
-成交信息的推送，具体再哪个函数返回取决于易盛的网关程序，在实盘系统中多腿成交返回与OnRtnMatchInfo，单腿成交返回于OnRtnMatchState或者OnRtnMatchInfo，开发者在开发时需要处理以上两个函数接收成交。
+成交信息的推送，具体再哪个函数返回取决于易盛的网关程序，多腿成交返回与OnRtnMatchInfo，单腿成交返回于OnRtnMatchState或者OnRtnMatchInfo，开发者在开发时需要处理以上两个函数接收成交。
 
 - 委托信息状态变化推送
 
