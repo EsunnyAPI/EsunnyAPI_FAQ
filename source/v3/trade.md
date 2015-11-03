@@ -229,14 +229,7 @@ iReqID ==10 对应刚才发出的下单指令
 #API 申请流
 
 
-
-```flow
-st=>start: Start
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-e=>end
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
+```flow 
+st=>star:登陆www.esunny.cc注册开发者账号 e=>end：实盘交易op1=>下载测试API开发包
+st->op1->e
 ```
