@@ -226,10 +226,17 @@ iReqID ==10 对应刚才发出的下单指令
 报单请求结构中Hedge = HEDGE_B即可。
 
 ---
-#API 申请流程
+#API 申请流
 
-st=>star:登陆www.esunny.cc注册开发者账号
-e=>end：实盘交易
-op1=>下载测试API开发包
-st->op1->e
 
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
