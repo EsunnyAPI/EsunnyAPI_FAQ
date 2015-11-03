@@ -180,6 +180,7 @@ iReqID ==10 对应刚才发出的下单指令
     };```
     
     
+- 检查授码是否正确，连接地址是否正确
 - 登陆身份，IDENTITY_CLIENT（个人客户）、 IDENTITY_TRADER（交易员）、 IDENTITY_MANAGE（管理员），后台配置为何种类型授权，用相应身份登陆
 - 结构体填充时，个人客户用ClientNo，交易员操作员用 OperatorNo。
 - 联系IT，检查后台API授权设置，核对授权是否与后台设置一致。
