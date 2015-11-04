@@ -49,7 +49,7 @@ API中错误码有两种：
         //未连接或者网络错误
         const TErrorCodeType Err_Network_Disconnected  =11; 
         
-- 由OnRsp返回的错误码，由后台服务返回
+- 由OnRsp*** OnRtn***返回的错误码，由后台服务返回
 
 
      OnLogin(const TEsLoginRspField* rsp, int errCode, const int iReqID）
