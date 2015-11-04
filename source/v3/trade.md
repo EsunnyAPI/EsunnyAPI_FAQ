@@ -226,6 +226,6 @@ iReqID ==10 对应刚才发出的下单指令
 报单请求结构中Hedge = HEDGE_B即可。
 
 ---
-#API 申请流
+#API 申请流程
 ![](D][`_YRU0N))~XS@BVYY7`F.png)
 
