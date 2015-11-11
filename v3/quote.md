@@ -3,7 +3,7 @@
 ----
 
 #错误码
-```
+```cpp
 const int ESUNNY_QUOT_ERR_SUCCESS				=  0; //成功
 const int ESUNNY_QUOT_ERR_CONNFAIL				= -1; //连接失败
 const int ESUNNY_QUOT_ERR_SETSOCK				= -2; //设置连接属性失败
@@ -38,23 +38,22 @@ const int ESUNNY_QUOT_ERR_SUBFREQUENCYEXCEED	= -8; //行情订阅频率超限
 #OnRspMarketInfo
 
 当登陆成功后，可以订阅的合约将从此函数推过来。
-```
-virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast){
-
-		if (bLast==1)
-		{
-			return 0;
-		}
-
-		for(int i=0 ;i<pMarketInfo->stocknum;++i)
-		{
-			string str_contractInfo  = string(pMarketInfo->stockdata[i].szCode);
-			v_contractInfo.push_back(str_contractInfo);
-		}
-		
-
+```cpp
+virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast)
+{
+	if (bLast==1)
+	{
 		return 0;
 	}
+	
+	for(int i=0 ;i<pMarketInfo->stocknum;++i)
+	{
+		string str_contractInfo  = string(pMarketInfo->stockdata[i].szCode);
+		v_contractInfo.push_back(str_contractInfo);
+	}
+
+	return 0;
+}
 ```
 
 ---
