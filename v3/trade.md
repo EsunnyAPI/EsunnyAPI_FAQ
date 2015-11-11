@@ -247,3 +247,26 @@ struct TEsCurrencyQryRspField
 
 ![API申请流程](../images/v3_api_shen_qing_liu_cheng.png)
 
+---
+
+#客户自定义保留字段
+
+- 在报单结构中提供了客户保留字段，客户可以填充字段，用于标识此定单由您的开发程中发出。
+
+- 客户保留字段不会显示于易盛公司的itrade、极星客户端上，但是会保存在数据库中
+
+
+
+
+    //报单请求结构
+    struct TEsOrderInsertReqField
+    {
+        ...
+        ...
+        TOrderSaveIntType			SaveInt;                //客户保留字段1
+        TOrderSaveDoubleType		SaveDouble;             //客户保留字段2
+        TOrderSaveStringType		SaveString;             //客户保留字段3
+    };
+    
+    
+
