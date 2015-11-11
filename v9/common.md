@@ -2,7 +2,7 @@
 
 
 
-### API基本上都需要SessionID,请问这个SessionID是从哪里可以得到？在那个API方法里传呢？
+# API基本上都需要SessionID,请问这个SessionID是从哪里可以得到？在那个API方法里传呢？
 
  有API和Notify两个接口类，API是提供给上层App的调用接口，Notify相当于Spi，由上层App实现。
 每一次调用认为是一个Session,有唯一的一个SessionID。
@@ -11,7 +11,7 @@ App调用API请求类接口时，传入SessionID指针，API会返回一个值�
 
 ----------
 
-### 关于API的线程
+# 关于API的线程
  
  API的工作线程有：
 
@@ -22,7 +22,7 @@ App调用API请求类接口时，传入SessionID指针，API会返回一个值�
 
 ----
 
-### 登陆时，有哪些相关接口，调用时序是怎么样的？
+# 登陆时，有哪些相关接口，调用时序是怎么样的？
 
 调用接口：
 
@@ -46,7 +46,7 @@ TapAPI->Application: OnAPIReady
 
 ---
 
-### 关于错误码
+# 关于错误码
 
 易盛的接口返回的错误码分两类：
 
@@ -57,10 +57,10 @@ TapAPI->Application: OnAPIReady
 
 
 ---
-### 多个API实例会相互影响吗？
+# 多个API实例会相互影响吗？
 
 除了日志通过同一个日志实例，记在同一个文件中，其他的没有影响
 
 ---
-### demo程序是用哪一版的VS创建的？
+# demo程序是用哪一版的VS创建的？
 VS2012
