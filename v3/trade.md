@@ -228,4 +228,5 @@ iReqID ==10 对应刚才发出的下单指令
 ---
 #API 申请流程
 
+![API申请流程](../images/v3_api_shen_qing_liu_cheng.png)
 

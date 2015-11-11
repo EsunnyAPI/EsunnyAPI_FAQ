@@ -1,7 +1,13 @@
 {
     "plugins": [
-        "toc",
-        "js-sequence-diagram"
+		"-sharing",
+		"-search",
+		"-fontsettings",
+        "js-sequence-diagram",
+		"anchor-navigation"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {},
+	"links":{
+		"gitbook":false
+	}
 }
