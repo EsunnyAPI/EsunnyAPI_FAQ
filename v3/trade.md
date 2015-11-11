@@ -21,20 +21,28 @@
 
 - 单腿成交信息推送
   
-```virtual void __cdecl OnRtnMatchState(const TEsMatchStateNoticeField& rsp) = 0```
+```cpp
+virtual void __cdecl OnRtnMatchState(const TEsMatchStateNoticeField& rsp) = 0
+```
 - 多腿成交信息推送
 
-```virtual void __cdecl OnRtnMatchInfo(const TEsMatchInfoNoticeField& rsp) = 0```
+```cpp
+virtual void __cdecl OnRtnMatchInfo(const TEsMatchInfoNoticeField& rsp) = 0
+```
    
 成交信息的推送，具体再哪个函数返回取决于易盛的网关程序，多腿成交返回与OnRtnMatchInfo，单腿成交返回于OnRtnMatchState或者OnRtnMatchInfo，开发者在开发时需要处理以上两个函数接收成交。
 
 - 委托信息状态变化推送
 
-```virtual void __cdecl OnRtnOrderState(const TEsOrderStateNoticeField& rsp) = 0```
+```cpp
+virtual void __cdecl OnRtnOrderState(const TEsOrderStateNoticeField& rsp) = 0
+```
 
 - 下单推送，非自身API下单，由其他终端如itrader3.0  极星客户端下单的推送
 
-```virtual void __cdecl OnRtnOrderInfo(const TEsOrderInfoNoticeField& rsp) = 0```
+```cpp
+virtual void __cdecl OnRtnOrderInfo(const TEsOrderInfoNoticeField& rsp) = 0
+```
 
 
 
@@ -44,21 +52,25 @@ API中错误码：
 - 发送API指令返回错误码，说明API指令未发送成功
 
 
-        int  ret = Tap_Api->Login(req,iReqID);
-        ret==11
-        //未连接或者网络错误
-        const TErrorCodeType Err_Network_Disconnected  =11; 
+```cpp
+int  ret = Tap_Api->Login(req,iReqID);
+ret==11
+//未连接或者网络错误
+const TErrorCodeType Err_Network_Disconnected  =11; 
+```
         
 - 由OnRsp*** OnRtn***返回的错误码，由后台服务返回
 
 
-     OnLogin(const TEsLoginRspField* rsp, int errCode, const int iReqID）
-     
-     errCode ==7;
-     
-     //登录密码错
-     
-     const TErrorCodeType Err_Login_Password= 7;
+```cpp
+OnLogin(const TEsLoginRspField* rsp, int errCode, const int iReqID）
+
+errCode ==7;
+
+//登录密码错
+
+const TErrorCodeType Err_Login_Password= 7;
+```
 
 关于错误码的解释在EsForeignApiErrCode.h定义，开发者可以根据定义查找错误原因。
 
@@ -97,6 +109,7 @@ API中错误码：
 
 一个限价单的报单结构示例：
 
+```cpp
     TEsOrderInsertReqField req;
 	memset(&req,0,sizeof(req));
 	//客户号
@@ -117,7 +130,7 @@ API中错误码：
 	req.OrderPrice=630;
 	//委托数量
 	req.OrderVol=1;
-	
+```	
 
 ---
 
@@ -158,26 +171,28 @@ iReqID ==10 对应刚才发出的下单指令
 ---
 #513 Err_Frnt_APPNotAllow 客户应用没有授权问题排查
   
-```//登录请求结构
-    struct TEsLoginReqField
-    {    
-        TIsCaLoginType				IsCaLogin;              //是否CA认证
-        TEsLoginIdentityType		Identity;               //登录身份类型,目前只支持单客户
-        TIsForcePasswordType		IsForcePwd;             //是否强制修改密码
-        /// 使用不同账户登录时共用登录号
-        union														
-        {
-            TClientNoType				ClientNo;			//客户号,代理客户号
-            TOperatorNoType				OperatorNo;			//操作员号,代理操作员号
-        };
-        /// 对应所使用的登录账号的密码
-        TLoginPasswordType			LoginPwd;				//登录密码
-        /// 强制修改密码时的新密码
-        TLoginPasswordType			NewPwd;					//强制修改密码登录时,新修改密码
-        TOtpPassType				OtpPass;                //otp认证密码
-        TEsSizeType                 CaLen;                  //CA信息长度，IsCaLogin为'Y'时，本字段有效
-        TCaInfoType					CaInfo;					//CA登录时填写,IsCaLogin为'Y'时，本字段有效
-    };```
+```cpp
+//登录请求结构
+struct TEsLoginReqField
+{    
+    TIsCaLoginType				IsCaLogin;              //是否CA认证
+    TEsLoginIdentityType		Identity;               //登录身份类型,目前只支持单客户
+    TIsForcePasswordType		IsForcePwd;             //是否强制修改密码
+    /// 使用不同账户登录时共用登录号
+    union														
+    {
+        TClientNoType				ClientNo;			//客户号,代理客户号
+        TOperatorNoType				OperatorNo;			//操作员号,代理操作员号
+    };
+    /// 对应所使用的登录账号的密码
+    TLoginPasswordType			LoginPwd;				//登录密码
+    /// 强制修改密码时的新密码
+    TLoginPasswordType			NewPwd;					//强制修改密码登录时,新修改密码
+    TOtpPassType				OtpPass;                //otp认证密码
+    TEsSizeType                 CaLen;                  //CA信息长度，IsCaLogin为'Y'时，本字段有效
+    TCaInfoType					CaInfo;					//CA登录时填写,IsCaLogin为'Y'时，本字段有效
+};
+```
     
     
 - 检查授码是否正确，连接地址是否正确
@@ -195,16 +210,17 @@ iReqID ==10 对应刚才发出的下单指令
 
 #币种与汇率
 
-
-    //币种查询应答结构
-    struct TEsCurrencyQryRspField
-    {
-        TCurrencyNoType				CurrencyNo;
-        TCurrencyNameType			CurrencyName;
-        TIsPrimaryCurrencyType		IsPrimary;
-        TCurrencyGroupFlagType		CurrencyGroup;
-        TExchangeRateType			ExchangeRate;
-    };
+```cpp
+//币种查询应答结构
+struct TEsCurrencyQryRspField
+{
+    TCurrencyNoType				CurrencyNo;
+    TCurrencyNameType			CurrencyName;
+    TIsPrimaryCurrencyType		IsPrimary;
+    TCurrencyGroupFlagType		CurrencyGroup;
+    TExchangeRateType			ExchangeRate;
+};
+```
     
 
 - IsPrimar 是否基币
