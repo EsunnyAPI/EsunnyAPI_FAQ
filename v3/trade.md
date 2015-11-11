@@ -89,22 +89,23 @@ const TErrorCodeType Err_Login_Password= 7;
 
 #TEsOrderInsertReqField报单请求结构
 
-|TClientNoType				ClientNo;   //客户号 |	必填  |
-| -- | -- |
-|TCommodityNoType			CommodityNo;         //商品代码	|必填|
-|TContractNoType			ContractNo;             //合约代码|	必填|
-|TOrderTypeType			OrderType;			//委托类型	|必填|
-|TOrderWayType		OrderWay;            //委托方式,用于标识订单委托来源	|必填
-|TOrderModeType				OrderMode;				//委托模式	|必填|
-|TDateTimeType				ValidDateTime;	//有效日期(GTD情况下使用)|	GTD必填|
-|TIsRiskOrderType			IsRiskOrder;			//风险报单|	非必填，个人客户登陆身份，风险报单为否|
-|TDirectType					Direct;					//买入卖出	|必填|
-|TOffsetType					Offset;					//开仓平仓	|必填|
-|THedgeType					Hedge;					//投机保值	|非必填|
-|TTradePriceType				OrderPrice;				//委托价格	|必填|
-|TTradePriceType				TriggerPrice;			//触发价格	|止损单必填|
-|TTradeVolType				OrderVol;				//委托数量	|必填|
-|TTradeVolType				MinMatchVol;			//最小成交量	|非必填|
+|字段类型| 字段名称| 中文解释| 是否必填|
+| --------| -----  | --  | --  |
+|TClientNoType|ClientNo|客户号|必填|
+|TCommodityNoType|CommodityNo|商品代码|必填|
+|TContractNoType|ContractNo|合约代码|必填|
+|TOrderTypeType|OrderType|委托类型|必填|
+|TOrderWayType|OrderWay|委托方式,用于标识订单委托来源|必填|
+|TOrderModeType|OrderMode|委托模式|必填|
+|TDateTimeType|ValidDateTime|有效日期(GTD情况下使用)|GTD必填|
+|TIsRiskOrderType|IsRiskOrder|风险报单|非必填，个人客户登陆身份，风险报单为否|
+|TDirectType|Direct|买入卖出|必填|
+|TOffsetType|Offset|开仓平仓|必填|
+|THedgeType|Hedge|投机保值|非必填|
+|TTradePriceType|OrderPrice|委托价格|必填|
+|TTradePriceType|TriggerPrice|触发价格|止损单必填|
+|TTradeVolType|OrderVol|委托数量|必填|
+|TTradeVolType|MinMatchVol|最小成交量|非必填|
 
 
 一个限价单的报单结构示例：
