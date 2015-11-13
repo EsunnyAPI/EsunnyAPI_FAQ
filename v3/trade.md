@@ -268,5 +268,11 @@ struct TEsCurrencyQryRspField
         TOrderSaveStringType		SaveString;             //客户保留字段3
     };
     
-    
+
+#断线重连
+
+- 断线后onclose回调通知
+- 不要在onclose回调中进行open重连操作，否则将造成阻塞open函数无回应。
+
+
 
