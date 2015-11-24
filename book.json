@@ -4,9 +4,20 @@
 		"-search",
 		"-fontsettings",
         "js-sequence-diagram",
-		"anchor-navigation"
+		"anchor-navigation",
+		"search-pro",
+		"tbfed-pagefooter"
     ],
-    "pluginsConfig": {},
+    "pluginsConfig": {
+		"search-pro":{
+			"cutWordLib":"nodejieba"
+		},
+		"tbfed-pagefooter": {
+		  "copyright":"&copy Esunny API Team",
+		  "modify_label": "修订时间：",
+		  "modify_format": "YYYY-MM-DD HH:mm:ss"
+		}
+	},
 	"links":{
 		"gitbook":false
 	}
