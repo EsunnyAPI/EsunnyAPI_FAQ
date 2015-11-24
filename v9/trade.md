@@ -3,6 +3,10 @@
 # 交易接口，为啥会频繁调用OnRtnFund,OnRtnPositionProfit这两个函数?
 
 有持仓的时候，在会发生资金变化和持仓盈亏变化，这两个接口是变化通知接口。
+如果不需要推送，可以在登录时的TapAPITradeLoginAuth中填写相应的NoticeIgnoreFlag。
+
+
+---
 
 # 为什么OnRtnFill 返回的数据结构里不包含RefString和RefInt？
 
@@ -10,6 +14,20 @@
 
 需要将成交信息与委托信息对应的话，建议在App里处理，OnRtnFill和OnRtnOrder里的信息可以相互映射。
 
-关键字段是： `ServerFlag` + `OrderNo`
+索引字段是： `OrderNo`
+
+
+---
+
+# 关于OnRtnOrder接口的错误码
+
+OnRtnOrder接口返回的错误码分两类：
+
+- 第一类是易盛自己的错误代码，只返回了错误代码，具体错误信息可以参考API文档或头文件
+- 第二类是交易所的代码和错误信息
+
+建议的处理逻辑：
+![错误码处理](../images/v9_error_code_seq.png)
+
 
 ---

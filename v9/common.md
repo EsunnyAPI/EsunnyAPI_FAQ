@@ -35,9 +35,12 @@
 
 # API基本上都需要SessionID,请问这个SessionID是从哪里可以得到？在那个API方法里传呢？
 
- 有API和Notify两个接口类，API是提供给上层App的调用接口，Notify相当于Spi，由上层App实现。
+有API和Notify两个接口类，API是提供给上层App的调用接口，Notify相当于Spi，由上层App实现。
+ 
 每一次调用认为是一个Session,有唯一的一个SessionID。
+
 App调用API请求类接口时，传入SessionID指针，API会返回一个值。
+
 当服务器应答数据回来时，API通过Notify接口把对应的SessionID和应答数据一同返回。
 
 ----------
@@ -74,18 +77,6 @@ TapAPI->Application: OnRspLogin
 Note left of TapAPI: 如果登陆成功\n继续返回OnAPIReady
 TapAPI->Application: OnAPIReady
 ```
-
----
-
-# 关于错误码
-
-易盛的接口返回的错误码分两类：
-
-- 第一类是易盛自己的错误代码，只返回了错误代码，具体错误信息可以参考API文档或头文件
-- 第二类是交易所的代码和错误信息
-
-**TODO:** 添加详细解释（图）
-
 
 ---
 # 多个API实例会相互影响吗？
