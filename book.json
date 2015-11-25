@@ -6,7 +6,8 @@
         "js-sequence-diagram",
 		"anchor-navigation",
 		"search-pro",
-		"tbfed-pagefooter"
+		"tbfed-pagefooter",
+		"baidu"
     ],
     "pluginsConfig": {
 		"search-pro":{
@@ -16,6 +17,9 @@
 		  "copyright":"&copy Esunny API Team",
 		  "modify_label": "修订时间：",
 		  "modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"baidu":{
+			"token": "996d7d789944261e71be275795686089"
 		}
 	},
 	"links":{
