@@ -86,3 +86,7 @@ TapAPI->Application: OnAPIReady
 ---
 # demo程序是用哪一版的VS创建的？
 VS2012
+
+---
+# 返回错误码-10004是什么原因？
+错误码-10004代表输入错误的:TAPICallOrPutFlagType，即错误的看涨看跌字段，通常是由于对CallOrPutFlag2字段赋值错误，当合约中不使用CallOrPutFlag2字段时，需要将此字段赋值TAPI_CALLPUT_FLAG_NONE。
