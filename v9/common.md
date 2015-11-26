@@ -89,4 +89,11 @@ VS2012
 
 ---
 # 返回错误码-10004是什么原因？
-错误码-10004代表输入错误的:TAPICallOrPutFlagType，即错误的看涨看跌字段，通常是由于对CallOrPutFlag2字段赋值错误，当合约中不使用CallOrPutFlag2字段时，需要将此字段赋值TAPI_CALLPUT_FLAG_NONE。
+
+错误码-10004代表输入错误的:TAPICallOrPutFlagType，即错误的看涨看跌字段。
+
+通常是由于对CallOrPutFlag2字段未赋值，当合约为单腿时，需要将此字段赋值TAPI_CALLPUT_FLAG_NONE。
+
+类似的，其他字符型枚举变量（类型名通常以Type结尾），都需要这么处理。
+
+
