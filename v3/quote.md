@@ -68,4 +68,6 @@ virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast)
 
 ---
 
+# RequestHistory 请求历史行情有限制？
 
+最多12000根，根数从当前时间计查。
