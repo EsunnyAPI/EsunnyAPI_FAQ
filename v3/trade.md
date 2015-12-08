@@ -146,7 +146,7 @@ const TErrorCodeType Err_Login_Password= 7;
 ---
 
 #请求ID iReqID
-请求id ，由API开发者维护，用于关联请求与应答
+
 
 常见应用场景：API开发者发出指令，在应答中如何知道此次为对开发者刚才发出指令的应答
 
