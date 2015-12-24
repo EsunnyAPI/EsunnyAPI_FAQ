@@ -15,7 +15,7 @@ const int ESUNNY_QUOT_ERR_SUBNUMEXCEED       = -7; //行情订阅数量超限
 const int ESUNNY_QUOT_ERR_SUBFREQUENCYEXCEED = -8; //行情订阅频率超限
 
 ```
-
+---
 
 #流程
 1. CreateEsunnyQuotClient 创建一个行情API实例,并设置回调函数接口
@@ -57,8 +57,9 @@ virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast)
 ```
 
 ---
-#订阅数量限制、订阅频率限制
+#订阅数量限制、订阅频率限制、行情推送频率
 - 订阅数量限制：订阅数量是API总共能够订阅合约的总量，由后台行情服务器设置决定
+- 行情推送频率：2次/S
 - 订阅频率限制：
 
 ---
