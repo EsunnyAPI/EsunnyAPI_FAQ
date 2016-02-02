@@ -1,6 +1,6 @@
 # 交易
 
-# 交易接口，为啥会频繁调用OnRtnFund,OnRtnPositionProfit这两个函数?
+# 交易接口，为什么会频繁调用OnRtnFund,OnRtnPositionProfit这两个函数?
 
 有持仓的时候，在会发生资金变化和持仓盈亏变化，这两个接口是变化通知接口。
 如果不需要推送，可以在登录时的TapAPITradeLoginAuth中填写相应的NoticeIgnoreFlag。
