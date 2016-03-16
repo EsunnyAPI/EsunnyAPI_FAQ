@@ -20,15 +20,23 @@
 
 ## 各平台API库命名
 
-
-|API平台|行情|交易|
+### 3.0 API
+|系统|行情|交易|
 |--|--|--|
-|3.0 Windows|EsunnyQuot.dll|ForeignTradeApi.dll|
-|3.0 Linux|无|libForeignTradeApi.so|
-|8.0 Windows|EsunnyApi.dll|EsunnyApi.dll|
-|8.0 Linux|无|无|
-|9.0 Windows|TapQuoteAPI.dll|TapTradeAPI.dll|
-|9.0 Linux|TapQuoteAPI.so|TapTradeAPI.so|
+|Windows|EsunnyQuot.dll|ForeignTradeApi.dll|
+|Linux|无|libForeignTradeApi.so|
+
+### 8.0 API
+|系统|行情|交易|
+|--|--|--|
+|Windows|EsunnyApi.dll|EsunnyApi.dll|
+|Linux|无|无|
+
+### 9.0 API
+|系统|行情|交易|
+|--|--|--|
+|Windows|TapQuoteAPI.dll|TapTradeAPI.dll|
+|Linux|TapQuoteAPI.so|TapTradeAPI.so|
 
 
 
