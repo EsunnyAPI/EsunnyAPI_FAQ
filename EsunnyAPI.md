@@ -9,9 +9,6 @@
 - `8.0`：内盘期货交易管理系统，用于内盘交易。
 - `9.0`：启明星期货期权交易平台，有内盘的行情和交易，以及外盘行情。
 
-
-
-
 对于**内盘**开发者，
 - 可先联系期货公司获取目前正在使用的易盛系统版本号：
  - 使用9.0平台对应的9.0API。
@@ -21,6 +18,17 @@
 - 目前交易只能用3.0API
 - 行情可以用3.0也可以用9.0（以期货公司部署的行情后台系统为准）。
 
+## 各平台API库命名
+
+
+|API平台|行情|交易|
+|--|--|--|
+|3.0 Windows|EsunnyQuot.dll|ForeignTradeApi.dll|
+|3.0 Linux|无|libForeignTradeApi.so|
+|8.0 Windows|EsunnyApi.dll|EsunnyApi.dll|
+|8.0 Linux|无|无|
+|9.0 Windows|TapQuoteAPI.dll|TapTradeAPI.dll|
+|9.0 Linux|TapQuoteAPI.so|TapTradeAPI.so|
 
 
 
