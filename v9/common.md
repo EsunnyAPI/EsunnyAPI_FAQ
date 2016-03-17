@@ -18,7 +18,8 @@
 
 
 **实盘环境：**
-实盘授权码，请到易盛官网 [开发者中心](https://user.esunny.com.cn/index.php?m=member&c=index&a=nouklogin&gid=2) 进行申请。
+
+请到易盛官网 [开发者中心](https://user.esunny.com.cn/index.php?m=member&c=index&a=nouklogin&gid=2) 申请实盘接入授权。
 
 
 ## 授权码怎么用？
