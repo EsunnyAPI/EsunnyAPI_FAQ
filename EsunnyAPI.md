@@ -94,3 +94,17 @@
 
 9.0行情账号：用户名ES，密码123456
 
+
+----
+
+##客户端
+
+易盛各个平台都有相应的客户端。
+API使用者，也可以同时登录客户端进行调试、验证。
+
+- 内盘交易/行情： [moni_epolestar.zip](http://www.esunny.com.cn/uploadfile/software/EsunnyTap9/moni_epolestar.zip )
+- 外盘 3.0交易/9.0行情： [EsunnyWP_APIClient_9.0.zip](http://www.esunny.com.cn/uploadfile/software/EsunnyWP_APIClient_9.0.zip)
+- 外盘3.0行情：[itrader3.0.zip](http://www.esunny.com.cn/uploadfile/software/itrader3.0.zip)
+
+
+
