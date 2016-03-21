@@ -8,6 +8,7 @@
 
 然后根据OnRspQryContract返回的结果，通过SubscribeQuote接口进行订阅。
 
+----
 
 # 多次调用SubscribeQuote，报错"超过行情最大总订阅数(72001)"？
 
