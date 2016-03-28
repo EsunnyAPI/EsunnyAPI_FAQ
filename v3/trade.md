@@ -59,7 +59,7 @@ ret==11
 const TErrorCodeType Err_Network_Disconnected  =11; 
 ```
         
-- 由OnRsp*** OnRtn***返回的错误码，由后台服务返回
+- 由OnRsp*** OnRtn***返回的错误码，是后台服务返回
 
 
 ```cpp
