@@ -47,7 +47,7 @@
 
 ## API获取方法
 ### 1.开发者中心网站
-1.进入易盛官网 [www.esunny.com.cn](www.esunny.com.cn)
+1.进入易盛官网 [www.esunny.com.cn](http://www.esunny.com.cn)
 
 2.网站右上角有`开发者登录`，如果没有注册过，请注册。注册后，需等待管理员审核通过后方可登陆。
 
