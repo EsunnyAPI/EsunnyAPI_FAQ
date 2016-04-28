@@ -28,7 +28,7 @@
 |系统|行情|交易|
 |--|--|--|
 |Windows|EsunnyQuot.dll|ForeignTradeApi.dll|
-|Linux|无|libForeignTradeApi.so|
+|Linux|libEsunnyQuot.so|libForeignTradeApi.so|
 
 ### 8.0 API
 |系统|行情|交易|
