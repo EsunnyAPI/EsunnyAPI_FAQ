@@ -72,3 +72,15 @@ virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast)
 # RequestHistory 请求历史行情有限制？
 
 最多12000根，根数从当前时间计查。
+
+---
+
+# 登陆时，返回错误："版本错误，禁止登陆"
+
+这是因为API用的授权码与后台服务器不匹配。
+
+- 模拟环境，用从我们网站或群里下载的Demo里的授权。
+- 实盘环境，找期货公司获取授权码。
+
+
+
