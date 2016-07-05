@@ -14,12 +14,12 @@
 
 可以使用公共的测试授权码：`启明星API测试授权码_2025年到期.txt`，软件授权号：Demo_Test
 
-获取方式：[开发者中心](https://user.esunny.com.cn/index.php?m=member&c=index&a=nouklogin&gid=2)或[启明星API开发者交流群](http://jq.qq.com/?_wv=1027&k=2DRexiQ)
+获取方式：[启明星API开发者交流群](http://jq.qq.com/?_wv=1027&k=2DRexiQ)
 
 
 **实盘环境：**
 
-请到易盛官网 [开发者中心](https://user.esunny.com.cn/index.php?m=member&c=index&a=nouklogin&gid=2) 申请实盘接入授权。
+请到易盛官网 [易盛网站](http://www.esunny.com.cn/index.php?m=content&c=index&a=lists&catid=71) 申请实盘接入授权。
 
 
 ## 授权码怎么用？
