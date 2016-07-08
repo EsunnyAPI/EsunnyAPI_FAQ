@@ -269,7 +269,7 @@ struct TEsCurrencyQryRspField
         ...
         TOrderSaveIntType			SaveInt;                //客户保留字段1
         TOrderSaveDoubleType		SaveDouble;             //客户保留字段2
-        TOrderSaveStringType		SaveString;             //客户保留字段3-禁止使用
+        TOrderSaveStringType		SaveString;             //客户保留字段3-
     };
     
 
