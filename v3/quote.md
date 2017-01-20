@@ -60,8 +60,7 @@ virtual int __cdecl OnRspMarketInfo(struct MarketInfo *pMarketInfo,int bLast)
 #订阅数量限制、订阅频率限制
 - 订阅数量限制：订阅数量是API总共能够订阅合约的总量，由后台行情认证设置决定
 - 行情推送频率：2次/S
-- 订阅频率限制：
-
+- 订阅频率限制：100个/S
 ---
 
 #授权码的获取
