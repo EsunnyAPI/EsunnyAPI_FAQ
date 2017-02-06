@@ -36,11 +36,17 @@
 |Windows|EsunnyApi.dll|EsunnyApi.dll|
 |Linux|无|无|
 
-### 9.0 API
+### 9.0 API(内盘)
 |系统|行情|交易|
 |--|--|--|
 |Windows|TapQuoteAPI.dll|TapTradeAPI.dll|
 |Linux|TapQuoteAPI.so|TapTradeAPI.so|
+
+### 9.0 API(外盘)
+|系统|行情|交易|
+|--|--|--|
+|Windows|TapQuoteAPI.dll|iTapTradeAPI.dll|
+|Linux|TapQuoteAPI.so|libiTapTradeAPI.so|
 
 
 ------
