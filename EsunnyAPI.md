@@ -9,7 +9,9 @@
 
 - `3.0`：国际金融衍生品交易分析系统, 用于外盘交易。
 - `8.0`：内盘期货交易管理系统，用于内盘交易。
-- `9.0`：启明星期货期权交易平台，有内盘的行情和交易，以及外盘行情。
+- `9.0`（内盘）：启明星期货期权交易平台，内盘的行情和交易。
+- `9.0`（外盘）：北斗星期货期权交易平台，外盘的行情和交易。
+
 
 对于**内盘**开发者，
 - 可先联系期货公司获取目前正在使用的易盛系统版本号：
@@ -17,11 +19,9 @@
  - 使用8.0平台对应8.0API。
 
 对于**外盘**开发者：
-- 目前交易只能用3.0API
+- 目前交易可以用3.0API和9.0API
 - 行情可以用3.0也可以用9.0（以期货公司部署的行情后台系统为准，如果都可以的话，建议9.0）。
-
------
-
+- 交易也可以使用3.0和9.0（以期货公司部署的交易后台系统为准，目前使用3.0交易后台的公司较多）。
 ## 各平台API库命名
 
 ### 3.0 API
@@ -86,7 +86,7 @@
 
 3.0行情账号：用户名ESUNNY, 密码Es123456 (该模拟环境为过期的虚拟合约，非实盘行情)
 
-3.0交易账号：[点击此处注册](http://www.esunny.com.cn/index.php?m=content&c=index&a=lists&catid=50)
+3.0/9.0交易账号：[点击此处注册](http://www.esunny.com.cn/index.php?m=content&c=index&a=lists&catid=50)
 
 9.0行情账号：用户名ES，密码123456 (该模拟环境基于实盘行情调整)
 
@@ -101,6 +101,4 @@ API使用者，也可以同时登录客户端进行调试、验证。
 - 内盘交易/行情： [moni_epolestar.zip](http://www.esunny.com.cn/uploadfile/software/EsunnyTap9/moni_epolestar.zip )
 - 外盘 3.0交易/9.0行情： [EsunnyWP_APIClient_9.0.zip](http://www.esunny.com.cn/uploadfile/software/EsunnyWP_APIClient_9.0.zip)
 - 外盘3.0行情：[itrader3.0.zip](http://www.esunny.com.cn/uploadfile/software/itrader3.0.zip)
-
-
-
+- 外盘9.0交易：[EsunnyWP_Client_9.3.zip](http://www.esunny.com.cn/uploadfile/software/EsunnyWP_Client_9.3.zip)
