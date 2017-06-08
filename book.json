@@ -3,9 +3,9 @@
 		"-sharing",
 		"-search",
 		"-fontsettings",
-        "js-sequence-diagram",
+        	"js-sequence-diagram",
 		"anchor-navigation",
-		"search-pro",
+		"search-pro@1.1.0",
 		"tbfed-pagefooter",
 		"baidu"
     ],
