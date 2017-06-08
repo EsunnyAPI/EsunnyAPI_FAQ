@@ -3,11 +3,11 @@
 		"-sharing",
 		"-search",
 		"-fontsettings",
-        	"js-sequence-diagram",
-		"anchor-navigation",
+        	"js-sequence-diagram@0.0.8",
+		"anchor-navigation@0.0.1",
 		"search-pro@1.1.0",
-		"tbfed-pagefooter",
-		"baidu"
+		"tbfed-pagefooter@0.0.1",
+		"baidu@0.1.0"
     ],
     "pluginsConfig": {
 		"search-pro":{
