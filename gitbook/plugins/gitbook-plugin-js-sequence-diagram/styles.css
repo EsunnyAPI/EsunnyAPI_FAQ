@@ -1,0 +1,8 @@
+svg text {
+  font-family: 'Open Sans', 'Clear Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.scroll {
+  width: 100%;
+  overflow-x: scroll;
+}

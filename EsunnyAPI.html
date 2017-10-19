@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>API整体介绍 | 易盛API常见问题整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="http://source.liangxh.cn/gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-js-sequence-diagram/styles.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-anchor-navigation/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./v3/index.html" />
+    
+    
+    <link rel="prev" href="./index.html" />
+    
+
+        <script src='//cdn.staticfile.org/raphael/2.1.2/raphael-min.js'></script>
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1" data-chapter-title="API整体介绍" data-filepath="EsunnyAPI.md" data-basepath="." data-revision="Thu Oct 19 2017 11:07:12 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        文档说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1" data-path="EsunnyAPI.html">
+            
+                
+                    <a href="./EsunnyAPI.html">
+                
+                        <i class="fa fa-check"></i>
+                        API整体介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="v3/index.html">
+            
+                
+                    <a href="./v3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        3.0API常见问题
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="v3/common.html">
+            
+                
+                    <a href="./v3/common.html">
+                
+                        <i class="fa fa-check"></i>
+                        共通
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="v3/quote.html">
+            
+                
+                    <a href="./v3/quote.html">
+                
+                        <i class="fa fa-check"></i>
+                        行情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="v3/trade.html">
+            
+                
+                    <a href="./v3/trade.html">
+                
+                        <i class="fa fa-check"></i>
+                        交易
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="v9/index.html">
+            
+                
+                    <a href="./v9/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        9.0API常见问题
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="v9/common.html">
+            
+                
+                    <a href="./v9/common.html">
+                
+                        <i class="fa fa-check"></i>
+                        共通
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="v9/quote.html">
+            
+                
+                    <a href="./v9/quote.html">
+                
+                        <i class="fa fa-check"></i>
+                        行情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="v9/trade.html">
+            
+                
+                    <a href="./v9/trade.html">
+                
+                        <i class="fa fa-check"></i>
+                        交易
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="contract.html">
+            
+                
+                    <a href="./contract.html">
+                
+                        <i class="fa fa-check"></i>
+                        联系我们
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >易盛API常见问题整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <html><head></head><body><h1 id="api&#x6574;&#x4F53;&#x4ECB;&#x7ECD;">API&#x6574;&#x4F53;&#x4ECB;&#x7ECD;</h1>
+<hr>
+<h2 id="&#x6613;&#x76DB;&#x91D1;&#x878D;&#x884D;&#x751F;&#x54C1;&#x7CFB;&#x7EDF;">&#x6613;&#x76DB;&#x91D1;&#x878D;&#x884D;&#x751F;&#x54C1;&#x7CFB;&#x7EDF;</h2>
+<p>&#x6613;&#x76DB;&#x63A8;&#x51FA;&#x7684;&#x91D1;&#x878D;&#x884D;&#x751F;&#x54C1;&#x7CFB;&#x7EDF;&#xFF0C;&#x76EE;&#x524D;&#x5E02;&#x573A;&#x4E0A;&#x5728;&#x7528;&#x7684;&#x6709;<code>3.0</code>&#x3001;<code>8.0</code>&#x3001;<code>9.0</code>&#x4E09;&#x4E2A;&#x5E73;&#x53F0;&#xFF0C;&#x5404;&#x4E2A;&#x5E73;&#x53F0;&#x6709;&#x81EA;&#x5DF1;&#x5BF9;&#x5E94;&#x7684;&#x884C;&#x60C5;&#x4E0E;&#x4EA4;&#x6613;API&#x3002;</p>
+<ul>
+<li><code>3.0</code>&#xFF1A;&#x56FD;&#x9645;&#x91D1;&#x878D;&#x884D;&#x751F;&#x54C1;&#x4EA4;&#x6613;&#x5206;&#x6790;&#x7CFB;&#x7EDF;, &#x7528;&#x4E8E;&#x5916;&#x76D8;&#x4EA4;&#x6613;&#x3002;</li>
+<li><code>8.0</code>&#xFF1A;&#x5185;&#x76D8;&#x671F;&#x8D27;&#x4EA4;&#x6613;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x4E8E;&#x5185;&#x76D8;&#x4EA4;&#x6613;&#x3002;</li>
+<li><code>9.0</code>&#xFF08;&#x5185;&#x76D8;&#xFF09;&#xFF1A;&#x542F;&#x660E;&#x661F;&#x671F;&#x8D27;&#x671F;&#x6743;&#x4EA4;&#x6613;&#x5E73;&#x53F0;&#xFF0C;&#x5185;&#x76D8;&#x7684;&#x884C;&#x60C5;&#x548C;&#x4EA4;&#x6613;&#x3002;</li>
+<li><code>9.0</code>&#xFF08;&#x5916;&#x76D8;&#xFF09;&#xFF1A;&#x5317;&#x6597;&#x661F;&#x671F;&#x8D27;&#x671F;&#x6743;&#x4EA4;&#x6613;&#x5E73;&#x53F0;&#xFF0C;&#x5916;&#x76D8;&#x7684;&#x884C;&#x60C5;&#x548C;&#x4EA4;&#x6613;&#x3002;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;<strong>&#x5185;&#x76D8;</strong>&#x5F00;&#x53D1;&#x8005;&#xFF0C;</p>
+<ul>
+<li>&#x53EF;&#x5148;&#x8054;&#x7CFB;&#x671F;&#x8D27;&#x516C;&#x53F8;&#x83B7;&#x53D6;&#x76EE;&#x524D;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x6613;&#x76DB;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x53F7;&#xFF1A;<ul>
+<li>&#x4F7F;&#x7528;9.0&#x5E73;&#x53F0;&#x5BF9;&#x5E94;&#x7684;9.0API&#x3002;</li>
+<li>&#x4F7F;&#x7528;8.0&#x5E73;&#x53F0;&#x5BF9;&#x5E94;8.0API&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;<strong>&#x5916;&#x76D8;</strong>&#x5F00;&#x53D1;&#x8005;&#xFF1A;</p>
+<ul>
+<li>&#x76EE;&#x524D;&#x4EA4;&#x6613;&#x53EF;&#x4EE5;&#x7528;3.0API&#x548C;9.0API</li>
+<li>&#x884C;&#x60C5;&#x53EF;&#x4EE5;&#x7528;3.0&#x4E5F;&#x53EF;&#x4EE5;&#x7528;9.0&#xFF08;&#x4EE5;&#x671F;&#x8D27;&#x516C;&#x53F8;&#x90E8;&#x7F72;&#x7684;&#x884C;&#x60C5;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x4E3A;&#x51C6;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x53EF;&#x4EE5;&#x7684;&#x8BDD;&#xFF0C;&#x5EFA;&#x8BAE;9.0&#xFF09;&#x3002;</li>
+<li>&#x4EA4;&#x6613;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;3.0&#x548C;9.0&#xFF08;&#x4EE5;&#x671F;&#x8D27;&#x516C;&#x53F8;&#x90E8;&#x7F72;&#x7684;&#x4EA4;&#x6613;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x4E3A;&#x51C6;&#xFF0C;&#x76EE;&#x524D;&#x4F7F;&#x7528;3.0&#x4EA4;&#x6613;&#x540E;&#x53F0;&#x7684;&#x516C;&#x53F8;&#x8F83;&#x591A;&#xFF09;&#x3002;<h2 id="&#x5404;&#x5E73;&#x53F0;api&#x5E93;&#x547D;&#x540D;">&#x5404;&#x5E73;&#x53F0;API&#x5E93;&#x547D;&#x540D;</h2>
+</li>
+</ul>
+<h3 id="30-api">3.0 API</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7CFB;&#x7EDF;</th>
+<th>&#x884C;&#x60C5;</th>
+<th>&#x4EA4;&#x6613;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>EsunnyQuot.dll</td>
+<td>ForeignTradeApi.dll</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>libEsunnyQuot.so</td>
+<td>libForeignTradeApi.so</td>
+</tr>
+</tbody>
+</table>
+<h3 id="80-api">8.0 API</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7CFB;&#x7EDF;</th>
+<th>&#x884C;&#x60C5;</th>
+<th>&#x4EA4;&#x6613;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>EsunnyApi.dll</td>
+<td>EsunnyApi.dll</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>&#x65E0;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="90-api&#x5185;&#x76D8;">9.0 API(&#x5185;&#x76D8;)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7CFB;&#x7EDF;</th>
+<th>&#x884C;&#x60C5;</th>
+<th>&#x4EA4;&#x6613;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>TapQuoteAPI.dll</td>
+<td>TapTradeAPI.dll</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>TapQuoteAPI.so</td>
+<td>TapTradeAPI.so</td>
+</tr>
+</tbody>
+</table>
+<h3 id="90-api&#x5916;&#x76D8;">9.0 API(&#x5916;&#x76D8;)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7CFB;&#x7EDF;</th>
+<th>&#x884C;&#x60C5;</th>
+<th>&#x4EA4;&#x6613;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>TapQuoteAPI.dll</td>
+<td>iTapTradeAPI.dll</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>TapQuoteAPI.so</td>
+<td>libiTapTradeAPI.so</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="api&#x83B7;&#x53D6;&#x65B9;&#x6CD5;">API&#x83B7;&#x53D6;&#x65B9;&#x6CD5;</h2>
+<h3 id="1&#x6613;&#x76DB;&#x7F51;&#x7AD9;">1.&#x6613;&#x76DB;&#x7F51;&#x7AD9;</h3>
+<p>1.&#x8FDB;&#x5165;&#x6613;&#x76DB;&#x5B98;&#x7F51; <a href="http://www.esunny.com.cn" target="_blank">www.esunny.com.cn</a></p>
+<p>2.&#x7F51;&#x7AD9;&#x53F3;&#x4E0A;&#x89D2;&#x6709;<code>API&#x63A5;&#x5165;</code></p>
+<h3 id="2&#x5F00;&#x53D1;&#x8005;&#x4EA4;&#x6D41;qq&#x7FA4;">2.&#x5F00;&#x53D1;&#x8005;&#x4EA4;&#x6D41;QQ&#x7FA4;</h3>
+<p>&#x542F;&#x660E;&#x661F;API&#x5F00;&#x53D1;&#x8005;&#x4EA4;&#x6D41;&#x7FA4; 253509842</p>
+<p>&#x7FA4;&#x91CC;&#x4E5F;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x5F00;&#x53D1;&#x6587;&#x6863;&#x3002;&#x4F46;&#x5206;&#x7C7B;&#x4E0D;&#x592A;&#x6E05;&#x6670;&#xFF0C;&#x5EFA;&#x8BAE;&#x4ECE;&#x5F00;&#x53D1;&#x8005;&#x4E2D;&#x5FC3;&#x7F51;&#x7AD9;&#x83B7;&#x53D6;&#x3002;</p>
+<hr>
+<h2 id="&#x6A21;&#x62DF;&#x73AF;&#x5883;">&#x6A21;&#x62DF;&#x73AF;&#x5883;</h2>
+<p>&#x6613;&#x76DB;&#x73B0;&#x5728;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x7684;API&#x6A21;&#x62DF;&#x73AF;&#x5883;&#x6709;&#xFF1A;</p>
+<h3 id="&#x5185;&#x76D8;&#xFF1A;"><strong>&#x5185;&#x76D8;</strong>&#xFF1A;</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">9.0 &#x884C;&#x60C5;</th>
+<th style="text-align:center">9.0 &#x4EA4;&#x6613;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8054;&#x901A;</td>
+<td style="text-align:center">123.15.58.21:6161</td>
+<td style="text-align:center">123.15.58.21:6160</td>
+</tr>
+<tr>
+<td>&#x7535;&#x4FE1;</td>
+<td style="text-align:center">222.88.40.170:6161</td>
+<td style="text-align:center">222.88.40.170:6160</td>
+</tr>
+</tbody>
+</table>
+<p>&#x884C;&#x60C5;&#x8D26;&#x53F7;&#xFF1A;&#x7528;&#x6237;&#x540D;ESUNNY, &#x5BC6;&#x7801;Es123456</p>
+<p>&#x4EA4;&#x6613;&#x8D26;&#x53F7;&#xFF1A;<a href="http://www.esunny.com.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=49" target="_blank">&#x70B9;&#x51FB;&#x6B64;&#x5904;&#x6CE8;&#x518C;</a></p>
+<h3 id="&#x5916;&#x76D8;&#xFF1A;"><strong>&#x5916;&#x76D8;</strong>&#xFF1A;</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">3.0 &#x884C;&#x60C5;</th>
+<th style="text-align:center">3.0 &#x4EA4;&#x6613;</th>
+<th style="text-align:center">9.0 &#x884C;&#x60C5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8054;&#x901A;</td>
+<td style="text-align:center">123.15.58.21:3331</td>
+<td style="text-align:center">123.15.58.21:7070</td>
+<td style="text-align:center">123.15.58.21:7171</td>
+</tr>
+<tr>
+<td>&#x7535;&#x4FE1;</td>
+<td style="text-align:center">222.88.40.170:3331</td>
+<td style="text-align:center">222.88.40.170:7070</td>
+<td style="text-align:center">222.88.40.170:7171</td>
+</tr>
+</tbody>
+</table>
+<p>3.0&#x884C;&#x60C5;&#x8D26;&#x53F7;&#xFF1A;&#x7528;&#x6237;&#x540D;ESUNNY, &#x5BC6;&#x7801;Es123456 (&#x8BE5;&#x6A21;&#x62DF;&#x73AF;&#x5883;&#x4E3A;&#x8FC7;&#x671F;&#x7684;&#x865A;&#x62DF;&#x5408;&#x7EA6;&#xFF0C;&#x975E;&#x5B9E;&#x76D8;&#x884C;&#x60C5;)</p>
+<p>3.0/9.0&#x4EA4;&#x6613;&#x8D26;&#x53F7;&#xFF1A;<a href="http://www.esunny.com.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=50" target="_blank">&#x70B9;&#x51FB;&#x6B64;&#x5904;&#x6CE8;&#x518C;</a></p>
+<p>9.0&#x884C;&#x60C5;&#x8D26;&#x53F7;&#xFF1A;&#x7528;&#x6237;&#x540D;ES&#xFF0C;&#x5BC6;&#x7801;123456 (&#x8BE5;&#x6A21;&#x62DF;&#x73AF;&#x5883;&#x57FA;&#x4E8E;&#x5B9E;&#x76D8;&#x884C;&#x60C5;&#x8C03;&#x6574;)</p>
+<hr>
+<h2 id="&#x5BA2;&#x6237;&#x7AEF;">&#x5BA2;&#x6237;&#x7AEF;</h2>
+<p>&#x6613;&#x76DB;&#x5404;&#x4E2A;&#x5E73;&#x53F0;&#x90FD;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x3002;
+API&#x4F7F;&#x7528;&#x8005;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x767B;&#x5F55;&#x5BA2;&#x6237;&#x7AEF;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;&#x3001;&#x9A8C;&#x8BC1;&#x3002;</p>
+<ul>
+<li>&#x5185;&#x76D8;&#x4EA4;&#x6613;/&#x884C;&#x60C5;&#xFF1A; <a href="http://www.esunny.com.cn/uploadfile/software/EsunnyTap9/moni_epolestar.zip" target="_blank">moni_epolestar.zip</a></li>
+<li>&#x5916;&#x76D8; 3.0&#x4EA4;&#x6613;/9.0&#x884C;&#x60C5;&#xFF1A; <a href="http://www.esunny.com.cn/uploadfile/software/EsunnyWP_APIClient_9.0.zip" target="_blank">EsunnyWP_APIClient_9.0.zip</a></li>
+<li>&#x5916;&#x76D8;3.0&#x884C;&#x60C5;&#xFF1A;<a href="http://www.esunny.com.cn/uploadfile/software/itrader3.0.zip" target="_blank">itrader3.0.zip</a></li>
+<li>&#x5916;&#x76D8;9.0&#x4EA4;&#x6613;&#xFF1A;<a href="http://www.esunny.com.cn/uploadfile/software/EsunnyWP_Client_9.3.zip" target="_blank">EsunnyWP_Client_9.3.zip</a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#xA9; Esunny API Team all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-10-19 11:06:07
+</span></footer></body></html><div id='anchors-navbar'><i class='fa fa-anchor'></i><ul><li><a href='#api整体介绍'>API整体介绍</a></li><ul><li><a href='#易盛金融衍生品系统'>易盛金融衍生品系统</a></li><li><a href='#各平台api库命名'>各平台API库命名</a></li><ul><li><a href='#30-api'>3.0 API</a></li><li><a href='#80-api'>8.0 API</a></li><li><a href='#90-api内盘'>9.0 API(内盘)</a></li><li><a href='#90-api外盘'>9.0 API(外盘)</a></li></ul><li><a href='#api获取方法'>API获取方法</a></li><ul><li><a href='#1易盛网站'>1.易盛网站</a></li><li><a href='#2开发者交流qq群'>2.开发者交流QQ群</a></li></ul><li><a href='#模拟环境'>模拟环境</a></li><ul><li><a href='#内盘：'>内盘：</a></li><li><a href='#外盘：'>外盘：</a></li></ul><li><a href='#客户端'>客户端</a></li></ul></ul></div><a href='#api整体介绍' id='goTop'><i class='fa fa-arrow-up'></i></a>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: 文档说明"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./v3/index.html" class="navigation navigation-next " aria-label="Next page: 3.0API常见问题"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="http://source.liangxh.cn/gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+    
+
+    
+    <script src="http://cdn.staticfile.org/underscore.js/1.7.0/underscore-min.js"></script>
+    
+
+    
+    <script src="http://cdn.staticfile.org/js-sequence-diagrams/1.0.4/sequence-diagram-min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-js-sequence-diagram/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"search-pro":{"cutWordLib":"nodejieba"},"tbfed-pagefooter":{"copyright":"&copy Esunny API Team","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu":{"token":"996d7d789944261e71be275795686089"},"js-sequence-diagram":{},"anchor-navigation":{},"highlight":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?996d7d789944261e71be275795686089';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+    </body>
+    
+</html>

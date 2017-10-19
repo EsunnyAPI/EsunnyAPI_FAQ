@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>行情 | 易盛API常见问题整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="http://source.liangxh.cn/gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-js-sequence-diagram/styles.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchor-navigation/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../v3/trade.html" />
+    
+    
+    <link rel="prev" href="../v3/common.html" />
+    
+
+        <script src='//cdn.staticfile.org/raphael/2.1.2/raphael-min.js'></script>
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.2" data-chapter-title="行情" data-filepath="v3/quote.md" data-basepath=".." data-revision="Thu Oct 19 2017 11:07:12 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        文档说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="EsunnyAPI.html">
+            
+                
+                    <a href="../EsunnyAPI.html">
+                
+                        <i class="fa fa-check"></i>
+                        API整体介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="v3/index.html">
+            
+                
+                    <a href="../v3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        3.0API常见问题
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="v3/common.html">
+            
+                
+                    <a href="../v3/common.html">
+                
+                        <i class="fa fa-check"></i>
+                        共通
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="v3/quote.html">
+            
+                
+                    <a href="../v3/quote.html">
+                
+                        <i class="fa fa-check"></i>
+                        行情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="v3/trade.html">
+            
+                
+                    <a href="../v3/trade.html">
+                
+                        <i class="fa fa-check"></i>
+                        交易
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="v9/index.html">
+            
+                
+                    <a href="../v9/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        9.0API常见问题
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="v9/common.html">
+            
+                
+                    <a href="../v9/common.html">
+                
+                        <i class="fa fa-check"></i>
+                        共通
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="v9/quote.html">
+            
+                
+                    <a href="../v9/quote.html">
+                
+                        <i class="fa fa-check"></i>
+                        行情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="v9/trade.html">
+            
+                
+                    <a href="../v9/trade.html">
+                
+                        <i class="fa fa-check"></i>
+                        交易
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="contract.html">
+            
+                
+                    <a href="../contract.html">
+                
+                        <i class="fa fa-check"></i>
+                        联系我们
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >易盛API常见问题整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <html><head></head><body><h1 id="&#x884C;&#x60C5;">&#x884C;&#x60C5;</h1>
+<hr>
+<h1 id="&#x9519;&#x8BEF;&#x7801;">&#x9519;&#x8BEF;&#x7801;</h1>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_SUCCESS            =  <span class="hljs-number">0</span>; <span class="hljs-comment">//&#x6210;&#x529F;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_CONNFAIL           = -<span class="hljs-number">1</span>; <span class="hljs-comment">//&#x8FDE;&#x63A5;&#x5931;&#x8D25;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_SETSOCK            = -<span class="hljs-number">2</span>; <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x5C5E;&#x6027;&#x5931;&#x8D25;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_NOCONN             = -<span class="hljs-number">3</span>; <span class="hljs-comment">//&#x672A;&#x8FDE;&#x63A5;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_NOLOGGED           = -<span class="hljs-number">4</span>; <span class="hljs-comment">//&#x672A;&#x767B;&#x5F55;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_NOCONTRACT         = -<span class="hljs-number">5</span>; <span class="hljs-comment">//&#x672A;&#x627E;&#x5230;&#x6B64;&#x5408;&#x7EA6;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_DATEINCORRECT      = -<span class="hljs-number">6</span>; <span class="hljs-comment">//&#x65E5;&#x671F;&#x4E0D;&#x6B63;&#x786E;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_SUBNUMEXCEED       = -<span class="hljs-number">7</span>; <span class="hljs-comment">//&#x884C;&#x60C5;&#x8BA2;&#x9605;&#x6570;&#x91CF;&#x8D85;&#x9650;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ESUNNY_QUOT_ERR_SUBFREQUENCYEXCEED = -<span class="hljs-number">8</span>; <span class="hljs-comment">//&#x884C;&#x60C5;&#x8BA2;&#x9605;&#x9891;&#x7387;&#x8D85;&#x9650;</span>
+</code></pre>
+<hr>
+<h1 id="&#x6D41;&#x7A0B;">&#x6D41;&#x7A0B;</h1>
+<ol>
+<li>CreateEsunnyQuotClient &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x884C;&#x60C5;API&#x5B9E;&#x4F8B;,&#x5E76;&#x8BBE;&#x7F6E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x63A5;&#x53E3;</li>
+<li>InitSecretKey &#x521D;&#x59CB;&#x5316;&#x5BC6;&#x94A5;</li>
+<li>Connect &#x8FDE;&#x63A5;&#x884C;&#x60C5;&#x670D;&#x52A1;&#x5668;</li>
+<li>Login &#x767B;&#x9646;&#x884C;&#x60C5;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5B8C;&#x6210;&#x521D;&#x59CB;&#x5316;&#x9636;&#x6BB5;</li>
+<li>OnRspMarketInfo &#x63A5;&#x6536;&#x53EF;&#x4EE5;&#x8BA2;&#x9605;&#x7684;&#x6240;&#x6709;&#x884C;&#x60C5;&#x5408;&#x7EA6;</li>
+<li>&#x8BA2;&#x9605;&#x4ECE;&#x7B2C;5&#x6B65;&#x4E2D;&#x63A5;&#x6536;&#x7684;&#x5408;&#x7EA6;</li>
+</ol>
+<hr>
+<h1 id="&#x6279;&#x91CF;&#x8BA2;&#x9605;&#x5408;&#x7EA6;">&#x6279;&#x91CF;&#x8BA2;&#x9605;&#x5408;&#x7EA6;</h1>
+<ul>
+<li>&#x5148;&#x5FAA;&#x73AF;&#x8C03;&#x7528;AddReqStk,&#x5C06;&#x8BA2;&#x9605;&#x7684;&#x884C;&#x60C5;&#x6DFB;&#x52A0;&#x5728;&#x7F13;&#x5B58;&#x4E2D;&#xFF0C;&#x6700;&#x540E;&#x8C03;&#x7528;SendReqStk&#x53D1;&#x9001;&#x8BA2;&#x9605;&#x6307;&#x4EE4;</li>
+</ul>
+<hr>
+<h1 id="onrspmarketinfo">OnRspMarketInfo</h1>
+<p>&#x5F53;&#x767B;&#x9646;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA2;&#x9605;&#x7684;&#x5408;&#x7EA6;&#x5C06;&#x4ECE;&#x6B64;&#x51FD;&#x6570;&#x63A8;&#x8FC7;&#x6765;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">int</span> __<span class="hljs-function">cdecl <span class="hljs-title">OnRspMarketInfo</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> MarketInfo *pMarketInfo,<span class="hljs-keyword">int</span> bLast)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (bLast==<span class="hljs-number">1</span>)
+    {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span> ;i&lt;pMarketInfo-&gt;stocknum;++i)
+    {
+        <span class="hljs-built_in">string</span> str_contractInfo  = <span class="hljs-built_in">string</span>(pMarketInfo-&gt;stockdata[i].szCode);
+        v_contractInfo.push_back(str_contractInfo);
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<hr>
+<h1 id="&#x8BA2;&#x9605;&#x6570;&#x91CF;&#x9650;&#x5236;&#x3001;&#x8BA2;&#x9605;&#x9891;&#x7387;&#x9650;&#x5236;">&#x8BA2;&#x9605;&#x6570;&#x91CF;&#x9650;&#x5236;&#x3001;&#x8BA2;&#x9605;&#x9891;&#x7387;&#x9650;&#x5236;</h1>
+<ul>
+<li>&#x8BA2;&#x9605;&#x6570;&#x91CF;&#x9650;&#x5236;&#xFF1A;&#x8BA2;&#x9605;&#x6570;&#x91CF;&#x662F;API&#x603B;&#x5171;&#x80FD;&#x591F;&#x8BA2;&#x9605;&#x5408;&#x7EA6;&#x7684;&#x603B;&#x91CF;&#xFF0C;&#x7531;&#x540E;&#x53F0;&#x884C;&#x60C5;&#x8BA4;&#x8BC1;&#x8BBE;&#x7F6E;&#x51B3;&#x5B9A;</li>
+<li>&#x884C;&#x60C5;&#x63A8;&#x9001;&#x9891;&#x7387;&#xFF1A;2&#x6B21;/S</li>
+<li>&#x8BA2;&#x9605;&#x9891;&#x7387;&#x9650;&#x5236;&#xFF1A;100&#x4E2A;/S</li>
+</ul>
+<hr>
+<h1 id="&#x6388;&#x6743;&#x7801;&#x7684;&#x83B7;&#x53D6;">&#x6388;&#x6743;&#x7801;&#x7684;&#x83B7;&#x53D6;</h1>
+<p>&#x6388;&#x6743;&#x7801;&#x4E0E;&#x671F;&#x8D27;&#x516C;&#x53F8;&#x7684;&#x884C;&#x60C5;&#x6388;&#x6743;&#x7ED1;&#x5B9A;&#xFF0C;&#x5BA2;&#x6237;&#x63A5;&#x5165;&#x5B9E;&#x76D8;&#x65F6;&#x8BF7;&#x5411;&#x671F;&#x8D27;&#x516C;&#x53F8;&#x7533;&#x8BF7;&#x6388;&#x6743;&#x7801;</p>
+<hr>
+<h1 id="requesthistory-&#x8BF7;&#x6C42;&#x5386;&#x53F2;&#x884C;&#x60C5;&#x6709;&#x9650;&#x5236;&#xFF1F;">RequestHistory &#x8BF7;&#x6C42;&#x5386;&#x53F2;&#x884C;&#x60C5;&#x6709;&#x9650;&#x5236;&#xFF1F;</h1>
+<p>&#x6700;&#x591A;12000&#x6839;&#xFF0C;&#x6839;&#x6570;&#x4ECE;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x8BA1;&#x67E5;&#x3002;</p>
+<hr>
+<h1 id="&#x767B;&#x9646;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#xFF1A;&#x7248;&#x672C;&#x9519;&#x8BEF;&#xFF0C;&#x7981;&#x6B62;&#x767B;&#x9646;">&#x767B;&#x9646;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#xFF1A;&quot;&#x7248;&#x672C;&#x9519;&#x8BEF;&#xFF0C;&#x7981;&#x6B62;&#x767B;&#x9646;&quot;</h1>
+<p>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;API&#x7528;&#x7684;&#x6388;&#x6743;&#x7801;&#x4E0E;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5339;&#x914D;&#x3002;</p>
+<ul>
+<li>&#x6A21;&#x62DF;&#x73AF;&#x5883;&#xFF0C;&#x7528;&#x4ECE;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x6216;&#x7FA4;&#x91CC;&#x4E0B;&#x8F7D;&#x7684;Demo&#x91CC;&#x7684;&#x6388;&#x6743;&#x3002;</li>
+<li>&#x5B9E;&#x76D8;&#x73AF;&#x5883;&#xFF0C;&#x627E;&#x671F;&#x8D27;&#x516C;&#x53F8;&#x83B7;&#x53D6;&#x6388;&#x6743;&#x7801;&#x3002;</li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#xA9; Esunny API Team all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-10-19 11:06:07
+</span></footer></body></html><div id='anchors-navbar'><i class='fa fa-anchor'></i><ul><li><a href='#行情'>行情</a></li><li><a href='#错误码'>错误码</a></li><li><a href='#流程'>流程</a></li><li><a href='#批量订阅合约'>批量订阅合约</a></li><li><a href='#onrspmarketinfo'>OnRspMarketInfo</a></li><li><a href='#订阅数量限制、订阅频率限制'>订阅数量限制、订阅频率限制</a></li><li><a href='#授权码的获取'>授权码的获取</a></li><li><a href='#requesthistory-请求历史行情有限制？'>RequestHistory 请求历史行情有限制？</a></li><li><a href='#登陆时，返回错误：版本错误，禁止登陆'>登陆时，返回错误："版本错误，禁止登陆"</a></li></ul></div><a href='#行情' id='goTop'><i class='fa fa-arrow-up'></i></a>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../v3/common.html" class="navigation navigation-prev " aria-label="Previous page: 共通"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../v3/trade.html" class="navigation navigation-next " aria-label="Next page: 交易"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="http://source.liangxh.cn/gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+    
+
+    
+    <script src="http://cdn.staticfile.org/underscore.js/1.7.0/underscore-min.js"></script>
+    
+
+    
+    <script src="http://cdn.staticfile.org/js-sequence-diagrams/1.0.4/sequence-diagram-min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-js-sequence-diagram/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"search-pro":{"cutWordLib":"nodejieba"},"tbfed-pagefooter":{"copyright":"&copy Esunny API Team","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu":{"token":"996d7d789944261e71be275795686089"},"js-sequence-diagram":{},"anchor-navigation":{},"highlight":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?996d7d789944261e71be275795686089';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+    </body>
+    
+</html>
